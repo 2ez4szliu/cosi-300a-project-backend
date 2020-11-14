@@ -56,9 +56,6 @@ module.exports = (app) => {
 		});
 	});
 
-	app.get('/secret', withAuth, function(req, res) {
-		res.send('The password is ...');
-	});
 
 	app.get('/checkToken', withAuth, function(req, res) {
 		res.sendStatus(200);

@@ -5,10 +5,9 @@ module.exports = (mongoose) => {
 		'submission',
 		mongoose.Schema(
 			{
-				name: String,
+				path: String,
 				user: String,
-				code: String,
-				accepted: Boolean
+				code: String
 			},
 			{ timestamps: true }
 		)

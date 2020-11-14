@@ -1,0 +1,8 @@
+Access Key ID:
+AKIAIU3YR3EMUPI7H4OQ
+Secret Access Key:
+jRpYGIsGm0mkZRSlkFk/7zqY+qAfYcGdLEnZpA/r
+
+endpoints:
+  ANY - https://1j6nofajmd.execute-api.us-east-2.amazonaws.com/dev/
+  ANY - https://1j6nofajmd.execute-api.us-east-2.amazonaws.com/dev/{proxy+}

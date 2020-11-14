@@ -1,7 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-
+const serverless = require('serverless-http');
 
 const config = require('./resources/config');
 const CONNECTION_STRING = `mongodb+srv://${config.USERNAME}:${config.PASSWORD}@${config.CLUSTER_NAME}.qakbd.mongodb.net/${config.DBNAME}?retryWrites=true&w=majority`;
@@ -15,10 +15,12 @@ mongoose
 	});
 
 const app = express();
-app.use(cors())
+app.use(cors());
 require('./routes/submission-routes')(app);
 require('./routes/login-routes')(app);
 
-app.listen(4000, function() {
-	console.log('listening on 4000');
-});
+// app.listen(4000, function() {
+// 	console.log('listening on 4000');
+// });
+
+module.exports.handler = serverless(app);
