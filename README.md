@@ -4,6 +4,19 @@
 This is an express application that defines several RESTful and authentication routes. The application is deployed on AWS EC2, the address is:
 http: //ec2-3-20-239-197.us-east-2.compute.amazonaws.com
 
+## How to run the application
+You can clone this github repository to your local environment, and run:
+
+### `npm install`
+
+to install all dependencies.
+
+After installing all dependencies, run:
+### `npm run dev`
+It runs the app in the development mode.<br />
+After seeing DB connection successfult, you can access the APIs below on http://localhost:4000
+
+
 ## Schema
 ### User
 
